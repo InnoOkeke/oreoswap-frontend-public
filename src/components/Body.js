@@ -1,25 +1,25 @@
 import "../css/local/partials/components/_body.css"
 
-const Body = ({isClicked}) => {
+const Body = () => {
 	return(
-		<section col className={isClicked ? "body body-bg-darkmode" : "body body-bg-lightmode"}>
-			<div className="wrapper body-container">
-				<div className="">
-					<h1 className="">
-						Our Ever- <br />Growing Features
-					</h1>
-					<p className="">Designed to improve the user 
-					<br />experience and contribute to the DEX <br />platform with support for <br />significant features li swapping, 
-					<br />lottery system, P2P and Liquidity Pool.</p>
-					<div className="body-img-wrapper">
-						<img src="img/banner-img.png" alt="" className="banner-img"/>
-					</div>
+		<div>
+			<section  className="">
+				<div className="svg-container">		
+					<img src="img/body.svg" alt="bg" className="bg-desktop" />
+					<img src="img/body-mobile.svg" alt="bg" className="bg-mobile"/>
+					<p className="text-center d-flex align-items-center wrapper">
+						OreoSwap is a DeFi powered Decentralized Exchange (DEX) developed
+						using Binance Smart Chain (BSC) for BEP-20 token swap. The decentralized
+						Exchange is created with Automated Market Maker (AMM) and Decentralized
+						Applications (DApps) for fast and low transaction fees. Exciting features
+						are high APR and APY in the yield Farming and Milkbar pools.
+						Low fees and efficient user interface for both new and expert traders are
+						our foremost concern. We wish you the best as you trade your way to financial
+						freedom.
+					</p>
 				</div>
-				<div className="body-cards">
-					
-				</div>
-			</div>
-		</section>
+			</section>
+		</div>
 	)
 }
 

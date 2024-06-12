@@ -1,25 +1,74 @@
 * a:hover{
 	filter: brightness(90%);
 }
+
+/* lightmode */
 .lightmode{
 	color: var(--black);
-	background: var(--white);
+	background: var(--grey);
+	transition: 0.2s ease;
+	position: relative;
 }
 .lightmode a{
-	color: var(--black);
+	color: var(--text-black);
+	text-decoration: none;
+}
+.lightmode i{
+	color: var(--light-mode-links-color);
 }
 .lightmode a:hover{
 	text-decoration: none;
 	color: var(--black);
 }
+.lightmode .buttons button{
+    border-radius: 18px;
+    height: 50px;
+	border: 2px solid var(--black);
+}
+/* darkmode */
 .darkmode{
 	color: var(--white);
-	background: var(--black);
+	background: var( --dark-mode-bkg-color);
+	transition: 0.2s ease;
+	position: relative;
 }
 .darkmode a{
+	color: var(--white);
+	text-decoration: none;
+}
+.darkmode i{
 	color: var(--white);
 }
 .darkmode a:hover{
 	text-decoration: none;
 	color: var(--white);
+}
+.darkmode .buttons button{
+    border-radius: 18px;
+    height: 50px;
+	border: 2px solid var(--white);
+}
+.darkmode .footer__search input[type=email]:focus{
+	color: var(--white)
+}
+
+/* hamburger */
+.lightmode .hamburger{
+	background: var(--light-mode-links-color);
+}
+.darkmode .hamburger{
+	background: var(--white);
+}
+/* footer */
+.lightmode .footer::after{
+	background: var(--black);
+}
+.darkmode .footer::after{
+	background: var(--white);
+}
+.lightmode input.searchBar{
+	border: 0.062rem solid var(--black);
+}
+.darkmode input.searchBar{
+	border: 0.062rem solid var(--white);
 }
